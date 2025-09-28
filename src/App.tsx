@@ -38,6 +38,7 @@ const App: React.FC = () => {
       iframeRef.current.srcdoc = finalHTML;
     }
   };
+
   const downloadHTML = () => {
     let finalHTML = HTMLvalue; // Use HTML exactly as written by user
     if (CSSvalue.trim() && !finalHTML.includes('<style>'))// Only add CSS/JS if they don't already exist in the HTML 
@@ -54,6 +55,7 @@ const App: React.FC = () => {
     link.click();
     URL.revokeObjectURL(url);
   };
+  
   React.useEffect(() => {
     const timeoutId = setTimeout(() => runCode(), 1000);
     return () => clearTimeout(timeoutId);
@@ -64,7 +66,8 @@ const App: React.FC = () => {
       <Menubar
         model={[
           { label: "github", icon: "pi pi-github", url: import.meta.env.VITE_GITHUB_URL },
-          { label: "linkedin", icon: "pi pi-linkedin", url: import.meta.env.VITE_LINKEDIN_URL }
+          { label: "linkedin", icon: "pi pi-linkedin", url: import.meta.env.VITE_LINKEDIN_URL },
+          { label: "gmail", icon: "pi pi-at", url: import.meta.env.VITE_GMAIL_URL }
         ]}
         style={{ padding: "8px" }}
         start={<img
