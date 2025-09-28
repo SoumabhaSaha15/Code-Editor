@@ -1,0 +1,6 @@
+@import 'primeflex/primeflex.css';
+* {
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-family: "Roboto Slab", serif;
+}
