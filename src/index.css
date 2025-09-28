@@ -1,6 +1,23 @@
 @import 'primeflex/primeflex.css';
+
 * {
   font-style: normal;
   font-optical-sizing: auto;
   font-family: "Roboto Slab", serif;
+}
+
+/* Theme transition */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Theme-specific styles */
+[data-theme="light"] {
+  background-color: #ffffff;
+  color: #495057;
+}
+
+[data-theme="dark"] {
+  background-color: #1e1e1e;
+  color: #ffffff;
 }

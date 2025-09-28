@@ -11,10 +11,8 @@
     "icons": "pwa-assets-generator --preset minimal-2023 public/logo.svg"
   },
   "dependencies": {
-    "@monaco-editor/react": "^4.7.0",
     "@uiw/codemirror-extensions-langs": "^4.25.2",
     "@uiw/react-codemirror": "^4.25.2",
-    "lodash": "^4.17.21",
     "primeflex": "^4.0.0",
     "primeicons": "^7.0.0",
     "primereact": "^10.9.7",
